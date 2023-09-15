@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.background {
+    background-image: linear-gradient(to right, rgb(212, 188, 188, 0.4), rgb(137, 127, 127, 0.4)), url(../img/back.jpg);
+    width: 100%;
+    height: 747px;
+    background-size: 100% 100%;
+}
+
+.maxwidth {
+    width: 80%;
+}
+
+.logo {
+    border-radius: 50%;
+    padding: 10% 50%;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_1 {
+    width: 80%;
+    border-radius: 30px;
+    margin: 2% 10%;
+    position: fixed;
+}
+
+.BgColour {
+    color: black;
+    transition: all 1s;
+    background-color: rgb(224, 215, 215, 0.4);
+}
+
+.navbar_1 img {
+    width: 120px;
+}
+
+.menu {
+    padding: 4.5% 4%;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu a:hover {
+    background-color: rgb(81, 73, 73, 0.7);
+    
+}
+
+#quote {
+    text-align: center;
+    margin: 30% 11%;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    width: 80%;
+}
+
+.dropdown {
+    overflow: hidden;
+    display: inline;
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin-left: 15px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(81, 73, 73, 0.7);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 3px 0px 0px 316px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.services {
+    background-color: rgb(193, 183, 183, 0.5);
+    width: 100%;
+    height: 704px;
+}
+
+.Service_heading {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(4, 4, 41);
+}
+
+.services_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+}
+
+.tour {
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 310px;
+}
+
+.tour img,
+h4 {
+    width: 80px;
+    padding: 2% 33%;
+    text-align: center;
+}
+
+.tour p {
+    padding: 0% 6%;
+    width: 200px;
+    text-align: center;
+}
+
+.border_bottom {
+    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
+    width: 100%;
+}
+
+.wifi {
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 330px;
+}
+
+.wifi img,
+h4 {
+    width: 80px;
+    padding: 2% 33%;
+    text-align: center;
+}
+
+.wifi p {
+    padding: 0% 6%;
+    width: 200px;
+    text-align: center;
+}
+
+.babysit {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 20%;
+    height: 310px;
+}
+
+.babysit img,
+h4 {
+    width: 80px;
+    padding: 2% 33%;
+    text-align: center;
+}
+
+.babysit p {
+    padding: 0% 6%;
+    width: 200px;
+    text-align: center;
+}
+
+.laundry {
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 330px;
+}
+
+.laundry img,
+h4 {
+    width: 80px;
+    padding: 2% 33%;
+    text-align: center;
+}
+
+.laundry p {
+    padding: 0% 6%;
+    width: 200px;
+    text-align: center;
+}
+
+.slide {
+    text-align: center;
+    font-size: 30px;
+    padding: 2% 2%;
+    background-color: rgb(193, 183, 183, 0.5);
+}
+
+.slide h2 {
+    color: rgb(4, 4, 41);
+}
+
+.slider {
+    width: 100%;
+    height: 610px;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/h1.jpg);
+    background-size: 100% 100%;
+    animation: changeimage 40s linear infinite;
+}
+
+@keyframes changeimage {
+    0% {
+        background-image: url(../img/h1.jpg);
+    }
+
+    12% {
+        background-image: url(../img/h2.jpg);
+    }
+
+    24% {
+        background-image: url(../img/h3.jpg);
+    }
+
+    48% {
+        background-image: url(../img/h4.jpg);
+    }
+
+    60% {
+        background-image: url(../img/h5.jpg);
+    }
+
+    72% {
+        background-image: url(../img/h6.jpg);
+    }
+
+    84% {
+        background-image: url(../img/h7.jpg);
+    }
+
+    96% {
+        background-image: url(../img/h7.jpg);
+    }
+}
+
+.about_us {
+    width: 100%;
+    padding: 2% 0%;
+    height: 640px;
+}
+
+.about_width {
+    width: 40%;
+}
+
+.about_width img {
+    width: 500px;
+    height: 200px;
+}
+
+.about_width p {
+    width: 600px;
+    text-align: justify;
+}
+
+.about_us h2 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(4, 4, 41);
+}
+
+#about_tab {
+    scroll-behavior: smooth;
+}
+
+.about {
+    float: left;
+    width: 30%;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.footer {
+    background-color: rgb(28, 28, 28);
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+    .background {
+        height: 307px;
+        background-size: 100% 100%;
+    }
+
+    .logo {
+        padding: 15% 20%;
+    }
+
+    .navbar_1 {
+        margin: 2% 10%;
+    }
+
+    .navbar_1 img {
+        width: 80px;
+    }
+
+    .menu {
+        padding: 6% 4%;
+    }
+
+    .menu a {
+        margin-left: 6px;
+        font-size: 15px;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 15px;
+        margin-left: 12px;
+    }
+
+    #quote {
+        margin: 25% 11%;
+        font-size: 15px;
+        color: white;
+        width: 80%;
+    }
+
+    .dropdown-content {
+
+        min-width: 70px;
+        margin: 3px 0px 0px 170px;
+    }
+
+    .dropdown-content a {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    .services {
+        height: 404px;
+    }
+
+    .services_box {
+        margin-top: 30px;
+    }
+
+    .Service_heading {
+        font-size: 15px;
+    }
+
+    .tour {
+        height: 300px;
+    }
+
+    .tour img {
+        width: 50px;
+        padding: 2% 30%;
+    }
+
+    .tour h4 {
+        margin-left: -20px;
+        font-size: 15px;
+    }
+
+    .tour p {
+        padding: 0% 1%;
+        width: 120px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .wifi {
+        height: 300px;
+    }
+
+    .wifi img {
+        width: 50px;
+        padding: 2% 30%;
+    }
+
+    .wifi h4 {
+        margin-left: -20px;
+        font-size: 15px;
+    }
+
+    .wifi p {
+        padding: 0% 1%;
+        width: 120px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .babysit {
+        height: 300px;
+    }
+
+    .babysit img {
+        width: 50px;
+        padding: 2% 30%;
+    }
+
+    .babysit h4 {
+        margin-left: -20px;
+        font-size: 15px;
+    }
+
+    .babysit p {
+        padding: 0% 1%;
+        width: 120px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .laundry {
+        height: 300px;
+    }
+
+    .laundry img {
+        width: 50px;
+        padding: 2% 30%;
+    }
+
+    .laundry h4 {
+        margin-left: -20px;
+        font-size: 15px;
+    }
+
+    .laundry p {
+        padding: 0% 1%;
+        width: 120px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .slide {
+        text-align: center;
+        font-size: 15px;
+        padding: 2% 2%;
+        background-color: rgb(193, 183, 183, 0.5);
+    }
+
+    .slide h2 {
+        color: rgb(4, 4, 41);
+    }
+
+    .slider {
+        width: 100%;
+        height: 610px;
+        left: 50%;
+        top: 50%;
+        background-image: url(../img/h1.jpg);
+        background-size: 100% 100%;
+        animation: changeimage 40s linear infinite;
+    }
+
+    .slide {
+        font-size: 15px;
+        padding: 2% 2%;
+    }
+
+    .slider {
+        height: 310px;
+    }
+
+    .about_us {
+        padding: 2% 10%;
+        width: 70%;
+        height: 440px;
+    }
+
+    .about_width {
+        width: 20%;
+    }
+
+    .about_width img {
+        width: 300px;
+        height: 100px;
+    }
+
+    .about_width p {
+        width: 300px;
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .about_us h2 {
+        font-size: 23px;
+    }
+
+    #about_tab {
+        scroll-behavior: smooth;
+    }
+
+    .about {
+        float: left;
+        width: 20%;
+    }
+
+    .about img {
+        border-radius: 50%;
+        width: 150px;
+    }
+
+    .about h3 {
+        font-size: 15px;
+        margin-top: 85px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+}
